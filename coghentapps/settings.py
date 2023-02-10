@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-ROOT_URLCONF = 'coghentapps.urls'
+ROOT_URLCONF = 'coghent-apps.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'coghentapps.wsgi.application'
+WSGI_APPLICATION = 'coghent-apps.wsgi.application'
 
 
 # Database
