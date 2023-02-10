@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-+2akbhdep7i2nribngj0bye9^syvr9wzu##i2)#+d9s91k%cyd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "coghent-apps.herokuapp.com"
+]
 
 
 # Application definition
@@ -49,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 ROOT_URLCONF = 'coghentapps.urls'
 
